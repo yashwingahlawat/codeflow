@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Inter:opsz,wght@14..32,500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, "BlinkMacSystemFont", 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(to right, rgb(17, 24, 39), rgb(75, 85, 99));
+}
+
+/* For WebKit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* For Firefox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}

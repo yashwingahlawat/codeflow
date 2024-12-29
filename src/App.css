@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Inter:opsz,wght@14..32,500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
+.homePageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+}
+
+.formWrapper {
+    background: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    color: #4aee88;
+    font-family: "Inter";
+}
+
+
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainLabel {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-family: "Inter";
+    color: #03ffaf;
+
+
+}
+
+.homePageLogo {
+    height: 200px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.inputBox {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background: linear-gradient(to right, rgb(243, 244, 246), rgb(209, 213, 219));
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Inter";
+
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Inter";
+}
+
+.copyBtn {
+    background-color: rgb(121, 255, 210);
+}
+
+.copyBtn:hover {
+    background-color: rgb(96, 199, 164);
+    transition: all 0.3s ease-in-out;
+}
+
+.joinBtn,
+.leaveBtn {
+    background: #0bb47f;
+
+    width: 100px;
+    margin-left: auto;
+    font-family: "Inter";
+    font-size: medium;
+}
+
+.joinBtn:hover,
+.leaveBtn:hover {
+    background: #03ffaf;
+}
+
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: "Inter";
+    color: #03ffaf;
+}
+
+.createNewBtn {
+    color: #0cfc18;
+    text-decoration: none;
+    border-bottom: 1px solid #0cfc18;
+    transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover {
+    color: #1ca350;
+    border-color: #0f9743;
+}
+
+.mainWrap {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
+
+.aside {
+    background: #1c1e29;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.asideInner {
+    flex: 1;
+}
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: "Inter";
+}
+
+.userName {
+    margin-top: 10px;
+    font-family: "Inter";
+}
+
+.logo {
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+}
+
+.logoImage {
+    height: 80px;
+    padding-left: 50px;
+}
+
+.connected {
+    color: #0cfc18;
+    font-family: "Inter";
+}
+
+.leaveBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.CodeMirror {
+    min-height: calc(100vh - 20px);
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 20px;
+    font-family: "Fira Code", monospace !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+
+}
+
+/* Slideable Component Styles */
+.slideableComponent {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    /* Start off-screen */
+    width: 300px;
+    height: calc(100vh - 20px);
+    background-color: #2c2f3f;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    /* Ensure it's on top of other content */
+}
+
+.slideableComponent textarea {
+    flex: 1;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #1c1e29;
+    border: none;
+    color: #fff;
+    resize: none;
+    font-family: "Fira Code", monospace !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+}
+
+.inputArea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.inputControls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.languageSelect {
+    width: 60%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #1c1e29;
+    color: white;
+    border: 1px solid #424242;
+    border-radius: 4px;
+    font-family: "Inter";
+}
+
+.runButton {
+    padding: 5px 10px;
+    width: 20%;
+    font-size: 16px;
+    background-color: #26bd2e;
+    color: #1c1e29;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Inter";
+    font-weight: bolder;
+}
+
+.runButton:hover {
+    background-color: #00ff0d;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.slideableComponent .inputArea {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.slideableComponent .outputArea {
+
+    border-radius: 10px;
+}
+
+/* Hover area to trigger the slide */
+.hoverArea {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20px;
+    /* Thin area to detect hover */
+    height: 100vh;
+    z-index: 999;
+    /* Below the slideable component */
+}
+
+/* When hoverArea is hovered, slide in the component */
+.hoverArea:hover {
+    right: 0;
+}
+
+.slideableComponent:hover {
+    right: 0;
+}
